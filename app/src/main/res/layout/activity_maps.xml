@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:textSize="15sp"
+            android:textColor="@color/orange"
+            android:text="@string/time"
+            android:id="@+id/tvTime"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:textSize="15sp"
+            android:textColor="@color/orange"
+            android:text="@string/distance"
+            android:id="@+id/tvDistance"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:textSize="15sp"
+            android:textColor="@color/orange"
+            android:text="@string/avgSpeed"
+            android:id="@+id/tvAvgSpeed"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/buttonViewData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/custom_button"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/buttonViewData"/>
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight = "2"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/custom_button"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/buttonStart"/>
+    </LinearLayout>
+</FrameLayout>

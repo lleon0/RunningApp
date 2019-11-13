@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:textColor="#FF7F27"
+        android:id="@+id/title"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+
+        android:id="@+id/listView"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/button"
+        android:background="#000000"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/custom_button"
+        android:text="Close"/>
+</RelativeLayout>
